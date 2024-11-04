@@ -1,0 +1,84 @@
+
+/* Importing Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Mobile-first styles (stacked vertically) */
+.details-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 40px auto;
+    max-width: 1200px;
+    padding: 20px;
+    gap: 20px;
+    border-radius: 8px;
+}
+
+.details-image-container {
+    max-width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.details-container h3, 
+.details-container h1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    color: #fc8106;
+}
+
+.details-container ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.details-container li {
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: #333333;
+}
+
+.details-image {
+    width: 100%;
+    height: auto;
+    max-height: 450px; 
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1)
+}
+
+.details-content {
+    padding-left: 0;
+    border-left: none;
+}
+
+.error-message {
+    color: #ff4f4f;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* Desktop styles (side-by-side layout) */
+@media (min-width: 768px) {
+    .details-container {
+        flex-direction: row;
+        align-items: flex-start;
+        border: 2px solid #ccc;
+        border-radius: 8px;
+    }
+
+    .details-image-container {
+        flex-basis: 33%;
+        max-width: 33%;
+        margin-bottom: 0;
+    }
+
+    .details-content {
+        flex-basis: 67%;
+        padding-left: 30px;
+        padding-top: 10px;
+        border-left: 2px solid #ccc;
+    }
+}

@@ -1,0 +1,65 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home component displays loading spinner when fetching 1`] = `
+<div
+  aria-label="Loading"
+  class="spinner"
+  role="status"
+/>
+`;
+
+exports[`Home component displays no characters found message 1`] = `
+<p
+  class="error-message"
+  role="alert"
+  style="color: red;"
+>
+  No characters found.
+</p>
+`;
+
+exports[`Home component displays search results after fetching data 1`] = `
+<li
+  class="search-result-item"
+  id="character-1"
+  tabindex="0"
+>
+  <a
+    href="/details/1"
+  >
+    Mickey Mouse
+  </a>
+</li>
+`;
+
+exports[`Home component renders search input 1`] = `
+<DocumentFragment>
+  <div
+    class="home-container"
+  >
+    <h1>
+      Search Disney Characters
+    </h1>
+    <input
+      aria-label="Search for Disney characters"
+      class="search-input"
+      placeholder="Type a character name"
+      type="text"
+      value=""
+    />
+    <ul
+      class="search-results"
+    />
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Home component shows error message on fetch error 1`] = `
+<p
+  class="error-message"
+  role="alert"
+  style="color: red;"
+>
+  Error fetching Disney characters. Please try again.
+</p>
+`;

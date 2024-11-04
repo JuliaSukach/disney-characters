@@ -1,0 +1,114 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Details Component displays default image when character image is not available 1`] = `
+<img
+  alt="Mickey Mouse"
+  class="details-image"
+  src="/images/character.png"
+/>
+`;
+
+exports[`Details Component displays error message if character not found 1`] = `
+<DocumentFragment>
+  <p
+    class="error-message"
+    role="alert"
+    style="color: red;"
+  >
+    Character not found.
+  </p>
+</DocumentFragment>
+`;
+
+exports[`Details Component displays error message on fetch failure 1`] = `
+<DocumentFragment>
+  <p
+    class="error-message"
+    role="alert"
+    style="color: red;"
+  >
+    Error fetching character details. Please try again later.
+  </p>
+</DocumentFragment>
+`;
+
+exports[`Details Component renders character details successfully 1`] = `
+<DocumentFragment>
+  <div
+    class="details-container"
+  >
+    <div
+      class="details-image-container"
+    >
+      <img
+        alt="Mickey Mouse"
+        class="details-image"
+        src="https://example.com/mickey.png"
+      />
+    </div>
+    <div
+      class="details-content"
+    >
+      <h1
+        class="details-name"
+      >
+        Mickey Mouse
+      </h1>
+      <h3>
+        Films
+      </h3>
+      <ul>
+        <li>
+          Steamboat Willie
+        </li>
+      </ul>
+      <h3>
+        TV Shows
+      </h3>
+      <ul>
+        <li>
+          The Mickey Mouse Clubhouse
+        </li>
+      </ul>
+      <h3>
+        Video Games
+      </h3>
+      <ul>
+        <li>
+          Kingdom Hearts
+        </li>
+      </ul>
+      <h3>
+        Park Attractions
+      </h3>
+      <p>
+        No park attractions available.
+      </p>
+      <div
+        class="learn-more-section"
+      >
+        <h3>
+          Learn More
+        </h3>
+        <a
+          href="https://disney.fandom.com/wiki/Mickey_Mouse"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          Visit Disney Fandom for more details
+        </a>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Details Component shows loading spinner when fetching data 1`] = `
+<DocumentFragment>
+  <div
+    aria-label="Loading"
+    class="spinner"
+    role="status"
+  />
+</DocumentFragment>
+`;
