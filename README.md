@@ -67,8 +67,8 @@ Getting Started
 1.  Clone the repository:
 
     ```
-    git clone <repository-url>
-    cd disney-characters-app
+    git clone [<repository-url>](https://github.com/JuliaSukach/disney-characters.git)
+    cd disney-characters
     ```
 
 2.  Install dependencies:
@@ -109,7 +109,7 @@ Project Structure
 -----------------
 
 ```
-disney-characters-app/
+disney-characters/
 |
 ├── public/                         # Static files
 ├── src/
